@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #FFE4E1;
+            padding: 20px;
+        }
+        h1{
+            color: #FA8072;
+        }
+        h2{
+            background-color:#FA8072 ;
+            color: azure;
+        }
+        .img_container img{
+            margin: 20px 0;
+            width: 500px;
+            height: auto;
+            border-radius: 20%;
+            box-shadow: 0 4px 8px #FA8072;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .gallery img{
+            width: calc(33% - 10px);
+            margin: 5px;
+            border-radius: 10px;
+        }
+        .video iframe{
+            margin: 20px 0;
+            border-radius: 20%;
+            box-shadow: 4px 4px 8px #FA8072;
+        }
+    </style>
+</head>
+<body>
+    <h1>HÌNH ẢNH & MEDIA</h1>
+    <h2>Hiển thị với mô tả</h2>
+    <div class="img_container">
+        <img src="avatar/máy ảnh.jpg" alt="camera">
+        <figcaption>Bắt trọn khoảnh khắc</figcaption>
+    </div>
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="avatar/hình 1.jpg" alt="anh1">
+        <img src="avatar/hình 2.jpg" alt="anh2">
+        <img src="avatar/hình 3.jpg" alt="anh3">
+    </div>
+    <h2>Video</h2>
+    <div class="video">
+        <iframe width="500"  src="https://www.youtube.com/embed/vJTpVvV1jgo" frameborder="10"></iframe>
+    </div>
+    <h2>Audio</h2>
+    <div class="audio">
+        <audio controls>
+            <source src="./audio/listening.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+</html>
