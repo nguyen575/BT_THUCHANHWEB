@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex ;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 0px;
+            background-color: #FFEFD5;
+            padding: 20px;
+        }
+        h1{
+            color:#FA8072;
+        }
+        h2{
+            color: white;
+            background-color:#FA8072 ;
+        }
+    
+        form{
+            background-color: rgba(255, 126, 150, 0.365);
+            padding: 20px;
+            border-radius: 10%;
+            box-shadow: 0 4px 8px #FA8072;
+            width: 300px;
+            margin: 0px;
+        }
+        input,button,select, textarea{
+            border-radius: 5%;
+            padding: 10px;
+            margin: 0 10px;
+            margin: 10px;
+            width: calc(100% - 22px);
+            box-sizing: border-box;
+            border: 1px solid #FA8072;
+        }
+        button:hover{
+            background-color: #FA8072;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <h1>CÁC MẪU FORM</h1>
+   <h2>Đăng nhập</h2>
+    <form class="login">
+        <input type="text" placeholder="username" required>
+        <input type="text" placeholder="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <h2>Khảo sát ý kiến</h2>
+    <form class="survey">
+        <label><input type="radio" name="option">Hài lòng</label>
+        <label><input type="radio" name="option">Rất hài lòng</label>
+        <label><input type="radio" name="option">Không hài lòng</label>
+        <textarea placeholder="ý kiến khác"></textarea>
+        <button type="submit">Gửi</button>
+    </form>
+    <h2>Đặt bàn</h2>
+    <form class="reserve">
+        <input type="text" placeholder="Tên người đặt" required>
+        <input type="datetime-local" required>
+        <input type="number" placeholder="Số người"required>
+        <textarea placeholder="Ghi chú"></textarea>
+        <button type="submit">Đặt bàn</button>
+    </form>
+    <h2>Phản hồi</h2>
+    <form class="response">
+        <label for="name">Tên khách hàng:</label>
+        <input type="text" placeholder="nhập tên">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <label for="rating">Đánh giá</label>
+        <div class="star">
+            <div>
+                <input type="radio" name="rating" id="star5" value="5">
+                <label for="star5">★★★★★</label>
+            </div>
+            <div>
+                <input type="radio" name="rating" id="star4" value="4">
+                <label for="star4">★★★★☆</label>
+            </div>
+            <div>
+                <input type="radio" name="rating" id="star3" value="3">
+                <label for="star3">★★★☆☆</label>
+            </div>
+            <div>
+                <input type="radio" name="rating" id="star2" value="2">
+                <label for="star2">★★☆☆☆</label>
+            </div>
+            <div>
+                <input type="radio" name="rating" id="star1" value="1">
+                <label for="star1">★☆☆☆☆</label>
+            </div>
+            <textarea placeholder="Ý kiến khác"></textarea>
+        </div>
+    </form>
+        <h2>Thanh toán hóa đơn</h2>
+        <form class="pay">
+            <input type="text" placeholder="Tên người nhận">
+            <input type="text" placeholder="Địa chỉ">
+            <input type="text" placeholder="Số điện thoại">
+            <label for="payment">Phương thức thanh toán</label>
+            <select name="payment" id="payment-method" required>
+                <option value="online bank">Ngân hàng</option>
+                <option value="e-wallet">Ví điện tử</option>
+                <option value="cash">Tiền mặt</option>
+            </select>
+        </form>
+        <button type="submit">Thanh toán</button>
+</body>
+</html>
