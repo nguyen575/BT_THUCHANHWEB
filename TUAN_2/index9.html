@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: lightpink;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 50px;
+            color: brown;
+        }
+        .mota{
+            display: flex;
+            justify-content: center;
+            text-align: justify;
+        }
+        .mota img{
+            width: 500px;
+            box-shadow: 0 4px 8px;
+            border-radius: 10%;
+        }
+        .food img{
+            display: flexbox;
+            justify-content: center;
+            align-items: center;
+            width: 450px;
+            padding: 20px;
+            border: 2px solid brown;
+            background-color: white;
+        }
+        h2{
+            text-align: left;
+            color: brown;
+            font-size: 35px;
+            background-color: white;
+        }
+        .food:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 4px 8px;
+        }
+        .map iframe{
+            width: 1000px;
+            height: 1000px;
+        }
+        .header{
+            display: grid;
+            justify-content: start;
+            align-items: baseline;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Du lịch Đà Lạt nên ăn gì?</h1>
+    <div class="header">1</div>
+    <div class="container">
+        <div class="mota">
+            <div class="box"><img src="avatar/du lịch đà lạt.jpg" alt="Đà lạt"></div>
+            <div class="box"><p>Đà Lạt có rất nhiều món ngon để bạn thưởng thức, từ các món đặc sản như nem nướng, bánh tráng nướng, lẩu gà lá é, cho đến các món ăn vặt như bánh căn, bánh mì xíu mại, và kem bơ</p></div>
+        </div>
+        <div class="head1">
+            <h2>Các món ngon ở Đà Lạt</h2>
+            <p>Đến với Đà Lạt sẽ thật thiếu sót nếu không trải nghiệm ẩm thực độc đáo, ngon mắt, ngon miệng của thành phố mộng mơ</p>
+            <div class="food">
+                <img src="avatar/kem bơ.jpg" alt="kem bơ đà lạt">
+                <img src="avatar/gỏi ngang.jpg" alt="gỏi cuốn">
+            </div>
+        </div>
+        <div class="map">
+            <h2>Bản đồ địa điểm</h2>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.879179625529!2d108.4423141141471!3d11.9401609912229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171b83b5b4f5e6b%3A0x35b7b7c1a0e9616e!2sH%E1%BB%93%20Xu%C3%A2n%20H%Cương%2C%20Ph%C432%20%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%20L%C3%A2m%20%C4%90%E1%BB%93ng!5e0!3m2!1svi!2s!4v1618408830799!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</body>
+</html>
