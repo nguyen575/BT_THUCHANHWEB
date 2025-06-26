@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORFOLIO</title>
+    <style>
+        body{
+            background-color:#d7e4ff ;
+            text-align: center;
+        }
+        h1{
+            color: rgb(3, 50, 193);
+            text-align: center;
+            font-size: 50px;
+        }
+        h2{
+            text-align: center;
+            color: white;
+            background-color: #008B8B;
+        }
+        p{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-style:italic
+        }
+        img{
+            border-radius: 10%;
+            width: 150px;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #00796b
+        }
+        .danh_sach{
+            list-style:none ;
+            padding: auto;
+            margin: 10px;
+            text-align: center;
+        }
+         .danh_sach li {
+            font-family: 'Courier New', Courier, monospace;
+            color: #00796b;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            background-color: #F0FFFF;   
+        }
+        .danh_sach li :hover{
+            background-color: burlywood;
+            cursor: pointer;
+        }
+        li:hover{
+            background-color: antiquewhite;
+            font-size: larger;
+        }
+        .tkb{
+            border: 2px solid #00796b;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            color: #00796b;
+            font-size: large;
+            border: 1px solid #04bca7;
+            text-align: center;
+            padding: 10px;
+        }
+        tr:nth-child(odd) {
+            background-color: #b2ebf2;
+        }
+        input, button {
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #00796b;
+            color: white;
+        }
+        nav{
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        a{
+            text-decoration: none;
+            margin: 0 20px;
+            
+        }
+        a:hover{
+            text-decoration: underline;
+            color: #F08080;
+        }
+    </style>
+</head>
+<body>
+     <h1>PORFOLIO</h1>
+     <h2>Giới thiệu bản thân</h2>
+    <img src="avatar/hình Khôi Nguyên.jpg" alt="ảnh đại diện" width="180" height="auto"><br>
+    <p>Tớ là Nguyên sinh viên năm 2 chuyên ngành Thương mại điện tử tại trường đại học Công Nghiệp tại TP.HCM.</p>
+    <h2>Môn học yêu thích</h2>
+    <ul class="danh_sach">
+        <li>Kiểm soát nội bộ</li>
+        <li>Hệ thống công nghệ WEB</li>
+        <li>Đồ họa ứng dụng</li>
+<li>Thuật ngữ thương mại điện tử</li>
+        <li>Marketing số</li>
+    </ul>
+    <h2>Thời khóa biểu</h2>
+    <table class="tkb" border= "1">
+        <thead>
+            <tr>
+                <th>thứ 2</th>
+                <th>thứ 3</th>
+                <th>thứ 4</th>
+            </tr>
+            <tr>
+                <td>Sinh</td>
+                <td>Sử</td>
+                <td>Địa</td>
+            </tr>
+            <tr>
+                <td>Toán</td>
+                <td>Lí</td>
+                <td>Hóa</td>
+            </tr>
+            <tr>
+                <td>Anh</td>
+                <td>Anh</td>
+                <td>văn</td>
+            </tr>
+        </thead>
+    </table>
+    <h2>Đăng ký thông tin</h2>
+    <form>
+        <input type="text" placeholder="Tên" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Số điện thoại" required>
+        <select>
+            <option>Nam</option>
+            <option>Nữ</option>
+        </select>
+        <button type="submit">Gửi</button>
+    </form>
+    <h2>MORE</h2>
+        <a href="index1.html">About me</a>
+        <a href="index2.html">Subject</a>
+        <a href="index3.html">Schedule</a>
+        <a href="index4.html">Form</a>
+</body>
+</html>
+TỔNG HỢP
