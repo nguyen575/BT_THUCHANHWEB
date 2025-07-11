@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Say hello</h2>
+    <input type="text" id="inputname" placeholder="nhập tên của bạn">
+    <button onclick="sayhello()">Click here</button>
+    <h3 id="greeting"></h3>
+    <script>
+        function sayhello() {
+            const name = document.getElementById("inputname").value;
+            const greetingtext = "hello " + name
+            document.getElementById("greeting").innerText = greetingtext;
+        }
+    </script>
+</body>
+</html>
