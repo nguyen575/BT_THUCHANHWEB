@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Kiểm tra</h2>
+    <input type="text" id="check" placeholder="nhập nội dung">
+    <button onclick="concheck()">Kiểm tra</button>
+    <p id="result"></p>
+    <script>
+        function concheck() {
+            const cont = document.getElementById("check").value.trim();
+            if (cont === "") {
+                document.getElementById("result").innerText = "bạn chưa nhập nội dung!";
+            }
+            else {
+                document.getElementById("result").innerText = "bạn đã nhập " + cont;
+            }
+        }
+    </script>
+</body>
+</html>
