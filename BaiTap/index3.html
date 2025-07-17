@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="content" placeholder="Vui lòng nhập nội dung">
+    <button onclick="check()">Gửi</button>
+    <p id="result"></p>
+    <script>
+        function check() {
+            const cont = document.getElementById("content").value;
+            const res = document.getElementById("result");
+            if (cont === " "){
+                res.textContent = "Bạn chưa nhập nội dung!"}
+            else if (!isNaN(cont)){
+                res.textContent = "Bạn vừa nhập số"
+            }
+            else {
+                res.textContent = "Bạn vừa nhập chữ"
+            }
+        }
+    </script>
+</body>
+</html>
