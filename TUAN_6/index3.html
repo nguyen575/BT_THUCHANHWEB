@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{color: red;}
+        .success{color: green;}
+    </style>
+</head>
+<body>
+    <label for="birth">Ngày sinh</label>
+    <input type="date" id="mydate">
+    <button onclick="checkdate()">check</button>
+    <p id="result"></p>
+    <script>
+        function checkdate(){
+            const mydate = document.getElementById("mydate").value;
+            const date = new Date(mydate);
+            const today = new Date();
+            const result = document.getElementById("result");
+            date.setHours(0, 0, 0, 0);
+            today.setHours(0, 0, 0, 0);
+            console.log("ngày chọn:" + date);
+            console.log("hôm nay:" + today);
+            if (date > today){
+                console.log("future");
+                result.textContent = "invalid";
+                result.className = "error";
+                
+            }
+            else if (date < today){
+                console.log("pass");
+                result.textContent = "valid";
+                result.className = "success";
+            }
+            else{
+                console.log("present");
+                result.textContent = "valid";
+                result.className = "success";
+            }
+        }
+    </script>
+</body>
+</html>
