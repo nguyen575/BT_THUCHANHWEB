@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" id="mydate" onchange="date()">
+    <script>
+        function date(){
+        const mydate = document.getElementById("mydate");
+        
+        const day = new Date (mydate.value);
+        console.log(day);
+        
+        console.log(day.getDate());
+        console.log(day.getMonth() + 1);
+        console.log(day.getFullYear());
+        
+        }
+    </script>
+</body>
+</html>
